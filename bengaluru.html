@@ -1,0 +1,51 @@
+---
+layout: default
+map: true
+title: Bus routes in Bengaluru
+---
+
+<div class='col12 clearfix'>
+
+  <div id='map' class=''></div>
+
+  <div id='sidebar' class='col3 pad2 dark fill-navy pin-left'>
+
+    <h1 class='fancy'><a href='#'>Bengaluru BMTC
+        <span class='tagline'>transit atlas</span></a>
+    </h1>
+
+
+    <p>OSM place nodes shifted by more than 1km. Click a map feature to open in JOSM</p>
+
+    <div data-map='legend'>
+
+      <p id='feature-properties'></p>
+
+      <!-- <h3>Issues</h3>
+
+      <ul class="keyline-top space-bottom1">
+        <li>
+          <a data-map-layer='osmlint circle selfintersecting'  href="#" class="truncate strong bloxk small active" onclick='mapToggle(this);'>
+              Self Intersecting Ways</a>
+        </li>
+        <li>
+          <a data-map-layer='osmlint circle selfintersecting' href="#" class="truncate strong bloxk small" onclick='mapToggle(this);'>
+              Unclosed Ways</a>
+        </li>
+        <li>
+          <a data-map-layer='osmlint circle selfintersecting' href="#" class="truncate strong bloxk small" onclick='mapToggle(this);'>
+              Bridge on node</a>
+        </li>
+      </ul>
+
+    </div> -->
+
+    <a href='https://github.com/planemad/map-inspector' class='button short stroke quiet icon alert'>Site has issues..</a>
+
+  </div>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src={{ "/js/mapbox-gl-js-common.js" | prepend: site.baseurl }}></script>
+<script type="text/javascript" src={{ "/js/map.js" | prepend: site.baseurl }}></script>
